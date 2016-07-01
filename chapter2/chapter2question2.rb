@@ -2,10 +2,15 @@
 
 puts "Enter your favourite number"
 favourite_number = gets.chomp
-favourite_number_better = favourite_number.to_f + 1
+better_than_favourite_number = favourite_number.to_i + 1
 
+# Printing the results using two variables
 puts 'Your favourite number ' + favourite_number
-puts 'The biggger and better number is ' + favourite_number_better.to_s 
+puts 'The biggger and better number is ' + better_than_favourite_number.to_s 
 
+# Printing results using favourite_number variable
 puts "Your favourite number is #{favourite_number.to_s}"
 puts "The biggest and better number is #{favourite_number.to_i + 1}"
+
+#Printinf results using better_than_favourite_number variable 
+puts "The biggest and better number is #{better_than_favourite_number}"

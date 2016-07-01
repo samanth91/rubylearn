@@ -1,5 +1,5 @@
 # Reply of a angry boss 
-puts "Angry Boss Reply".center(50)
+puts "Angry Boss Response".center(50)
 puts ''
 
 puts "what do you want"

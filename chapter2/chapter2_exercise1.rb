@@ -13,5 +13,8 @@ puts "Your first name is #{first_name}"
 puts "Your middle ame is #{middle_name}"
 puts "Your last name is #{last_name}"
 
+# Printing the full name with concatination
 puts 'Hello ' + first_name.capitalize + ' ' + middle_name.capitalize + ' ' + last_name.capitalize
+
+# Printing the full name with interpolation
 puts "Hello #{first_name.capitalize} #{middle_name.capitalize} #{last_name.capitalize}"

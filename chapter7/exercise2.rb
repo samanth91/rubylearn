@@ -10,7 +10,7 @@ while true
 end
 
 while words.size > 0
-  word = words.min do |a,b| a.downcase <=> b.downcase end
+  word = words.min {|a,b| a.downcase <=> b.downcase}
   puts word
   words -= [word]
 end

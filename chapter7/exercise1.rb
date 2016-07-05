@@ -8,7 +8,7 @@ array = []
 while word != ""
   word = gets.chomp
   array[x] = word
-  x = x + 1
+  x += 1
 end
 
 # Sorting the entered array

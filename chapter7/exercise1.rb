@@ -2,16 +2,14 @@
 
 puts "Enter any number of words and press enter on empty line when finished" 
 x = 0
-word = 'word1'
+word = "word1"
 array = []
 
-while word != ''
+while word != ""
   word = gets.chomp
   array[x] = word
   x = x + 1
 end
 
-puts "\n"
-
-# Sorting elemets of array
+# Sorting the entered array
 puts array.sort

@@ -9,6 +9,7 @@ while input != "BYE"
   else
     puts "HUH?! SPEAK UP, SONNY"
   end
+
   input = gets.chomp
 end
 

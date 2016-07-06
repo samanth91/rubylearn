@@ -23,6 +23,7 @@ def english_number number
   if write > 0
     hundreds = english_number write
     num_string += hundreds + " hundred"
+
     if left > 0
       num_string += " "
     end
@@ -50,8 +51,6 @@ def english_number number
   num_string    
 end
 
-number_of_bottles = 99
-  
 number_of_bottles = 99
 
 while number_of_bottles > 0

@@ -31,6 +31,7 @@ def english_number number
   if write > 0
     billions = english_number write
     num_string += billions + " billion"
+
     if left > 0
       num_string += " "
     end
@@ -42,6 +43,7 @@ def english_number number
   if write > 0
     millions = english_number write
     num_string += millions + " million"
+
     if left > 0
       num_string += " "
     end
@@ -53,6 +55,7 @@ def english_number number
   if write > 0
     thousands = english_number write
     num_string += thousands + " thousand"
+
     if left > 0
       num_string += " "
     end  
@@ -64,6 +67,7 @@ def english_number number
   if write > 0
     hundreds = english_number write
     num_string += hundreds + " hundred"
+
     if left > 0
       num_string += " "
     end

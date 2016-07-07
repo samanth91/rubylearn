@@ -3,6 +3,7 @@ require 'date'
 class HappyBirthday
   
   attr_reader :today
+
   def initialize(today = Date.today)
     @today = today 
   end
@@ -29,6 +30,7 @@ class HappyBirthday
     if today < Date.new(this_year, month, day)
       current_age -= 1 
     end
+
     current_age
   end
 end

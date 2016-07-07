@@ -24,7 +24,6 @@ def english_number(number)
 
   
   left = number
-  
   write = left / 1_000_000_000
   left -= write * 1_000_000_000
   if write > 0

@@ -1,5 +1,3 @@
-# 99 bottles of beer on the wall 
-
 def english_number(number)
   if number == 0
      return "no more"
@@ -49,10 +47,10 @@ end
 number = 99
 
 while number > 0
-	puts "#{english_number(number).capitalize} #{english_number(number) == 1 ? "bottle" : "bottles"} of beer on the wall, #{english_number(number)} #{number == 1 ? "bottle" : "bottles"} of beer."
-	number -= 1
-	puts "Take one down and pass it around, #{english_number(number)} #{number == 1 ? "bottle" : "bottles"} of beer on the wall."
-	puts ""
+  puts "#{english_number(number).capitalize} #{english_number(number) == 1 ? "bottle" : "bottles"} of beer on the wall, #{english_number(number)} #{number == 1 ? "bottle" : "bottles"} of beer."
+  number -= 1
+  puts "Take one down and pass it around, #{english_number(number)} #{number == 1 ? "bottle" : "bottles"} of beer on the wall."
+  puts ""
 end
 
 puts "No more bottles of beer on the wall, no more bottles of beer"

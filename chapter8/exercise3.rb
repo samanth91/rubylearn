@@ -31,7 +31,7 @@ def english_number(number)
       num_string += teenagers[left - 1] 
       left = 0
     else
-      num_string += tens_place[write - 1]
+      num_string += tens_place[write - 1] + "-"
     end
   end
 
@@ -42,6 +42,8 @@ def english_number(number)
   end
   
   num_string    
+  
+
 end
 
 number = 99

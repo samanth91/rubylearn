@@ -49,8 +49,6 @@ def english_number(number)
   end
   
   num_string    
-  
-
 end
 
 number = 99

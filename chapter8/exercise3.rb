@@ -26,17 +26,24 @@ def english_number(number)
  
   write = left / 10
   left -= write * 10
+
   if write > 0
     if write == 1 && left > 0
       num_string += teenagers[left - 1] 
       left = 0
     else
-      num_string += tens_place[write - 1] + "-"
+      num_string += tens_place[write - 1] 
+      
+      if write !=0 && left >=1
+      num_string += "-"
+      end
+
     end
   end
 
   write = left
   left = 0
+
   if write > 0
     num_string += ones_place[write - 1]
   end

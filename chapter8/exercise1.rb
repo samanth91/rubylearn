@@ -26,6 +26,7 @@ def english_number(number)
   left = number
   write = left / 1_000_000_000
   left -= write * 1_000_000_000
+
   if write > 0
     billions = english_number(write)
     num_string += billions + " billion"
@@ -37,6 +38,7 @@ def english_number(number)
 
   write = left / 1_000_000
   left -= write * 1_000_000
+
   if write > 0
     millions = english_number(write)
     num_string += millions + " million"
@@ -48,6 +50,7 @@ def english_number(number)
 
   write = left / 1000
   left -= write * 1000
+
   if write > 0
     thousands = english_number(write)
     num_string += thousands + " thousand"
@@ -59,6 +62,7 @@ def english_number(number)
  
   write = left / 100
   left -= write * 100
+
   if write > 0
     hundreds = english_number(write)
     num_string += hundreds + " hundred"
@@ -70,6 +74,7 @@ def english_number(number)
  
   write = left / 10
   left -= write * 10
+
   if write > 0
     if write == 1 && left > 0
       num_string += teenagers[left - 1] 
@@ -81,6 +86,7 @@ def english_number(number)
 
   write = left
   left = 0
+
   if write > 0
     num_string += ones_place[write - 1]
   end

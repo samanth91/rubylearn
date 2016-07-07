@@ -1,6 +1,6 @@
 # Convert the entered number into english 
 
-def english_number number
+def english_number(number)
   if number < 0
     return "Please enter a number zero or greater"
   end
@@ -25,11 +25,10 @@ def english_number number
   
   left = number
   
-  write = left / 1000000000
-  left -= write * 1000000000
-  
+  write = left / 1_000_000_000
+  left -= write * 1_000_000_000
   if write > 0
-    billions = english_number write
+    billions = english_number(write)
     num_string += billions + " billion"
 
     if left > 0
@@ -37,11 +36,10 @@ def english_number number
     end
   end
 
-  write = left / 1000000
-  left -= write * 1000000
-
+  write = left / 1_000_000
+  left -= write * 1_000_000
   if write > 0
-    millions = english_number write
+    millions = english_number(write)
     num_string += millions + " million"
 
     if left > 0
@@ -51,9 +49,8 @@ def english_number number
 
   write = left / 1000
   left -= write * 1000
-  
   if write > 0
-    thousands = english_number write
+    thousands = english_number(write)
     num_string += thousands + " thousand"
 
     if left > 0
@@ -63,9 +60,8 @@ def english_number number
  
   write = left / 100
   left -= write * 100
-  
   if write > 0
-    hundreds = english_number write
+    hundreds = english_number(write)
     num_string += hundreds + " hundred"
 
     if left > 0
@@ -75,7 +71,6 @@ def english_number number
  
   write = left / 10
   left -= write * 10
-  
   if write > 0
     if write == 1 && left > 0
       num_string += teenagers[left - 1] 
@@ -87,7 +82,6 @@ def english_number number
 
   write = left
   left = 0
-
   if write > 0
     num_string += ones_place[write - 1]
   end

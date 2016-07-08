@@ -27,7 +27,7 @@ class Dragon
     end
   end
 
-  private
+ private
   
   def feed
     puts "You feed #{@name}" 
@@ -43,6 +43,7 @@ class Dragon
 
   def put_to_bed
     puts "You put #{@name} to bed."
+ 
     @asleep = true
     3.times do 
       if @asleep 
@@ -78,7 +79,7 @@ class Dragon
     end
   end
 
-   private
+  private
 
   def hungry?
     @stuff_in_belly <= 2
@@ -98,7 +99,6 @@ class Dragon
          @asleep = false
 	  puts "He wakes up suddenly!"
       end
-    
       puts "#{@name} is starving! In desperation, he ate YOU!"
       exit 
     end
@@ -123,7 +123,7 @@ class Dragon
 	puts "He wakes up suddenly!"
       end
      
-      puts "#{@name} does the potty dance..."
+     puts "#{@name} does the potty dance..."
     end
   end
 end

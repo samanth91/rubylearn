@@ -8,9 +8,9 @@ class HappyBirthday
   end
 
   def start_spank
-    year = ask("What year are you born")
-    month = ask("What month are you born")
-    day = ask("What date are you born")
+    year = ask("What year were you born")
+    month = ask("What month were you born")
+    day = ask("What date were you born")
     age(year, month ,day).times do
       puts "SPANK"
     end

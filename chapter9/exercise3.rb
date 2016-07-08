@@ -26,6 +26,7 @@ class OrangeTree
     @height += 10
     @age += 1
     @orange_count = 0
+
     if @age < 10
       if @age == 2
          @orange_count += 3
@@ -45,9 +46,11 @@ tree = OrangeTree.new
 tree.height
 tree.count_the_oranges
 tree.one_year_passes
+
 tree.height
 tree.count_the_oranges
 tree.one_year_passes
+
 tree.height
 tree.count_the_oranges
 tree.pick_an_orange
@@ -55,10 +58,12 @@ tree.pick_an_orange
 tree.pick_an_orange
 tree.pick_an_orange
 tree.one_year_passes
+
 tree.height
 tree.count_the_oranges
 tree.pick_an_orange
 tree.one_year_passes
+
 tree.height
 tree.count_the_oranges
 tree.one_year_passes
@@ -66,8 +71,10 @@ tree.one_year_passes
 tree.one_year_passes
 tree.one_year_passes
 tree.one_year_passes
+
 tree.height
 tree.count_the_oranges
+
 tree.one_year_passes
 tree.one_year_passes
 tree.one_year_passes

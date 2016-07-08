@@ -32,4 +32,6 @@ class HappyBirthday
   end
 end
 
+puts "BITHDAY SPANK'S\n".center(50)
+puts "Enter your date of birth\n\n"
 puts HappyBirthday.new.start_spank

@@ -18,25 +18,26 @@ class Dragon
    
   def distributor(command)
     case command.downcase
-      when "feed" then feed
-      when "walk" then walk
-      when "put to bed" then put_to_bed
-      when "toss" then toss
-      when "rock" then rock
-      else puts "Try something else"
+    when "feed" then feed
+    when "walk" then walk
+    when "put to bed" then put_to_bed
+    when "toss" then toss
+    when "rock" then rock
+    else puts "Try something else"
     end
   end
 
   private
   
   def feed
-    puts "You feed #{@name} #{@stuffInBelly} = 10"
+    puts "You feed #{@name}" 
+    @stuff_in_belly = 10
     passage_of_time
   end
 
   def walk
-    puts "You walk #{@name} ."
-    @stuff_in_intestine = 0
+    puts "You walk #{@name}"
+    @stuff_in_intestine = 0 
     passage_of_time
   end
 
@@ -77,6 +78,8 @@ class Dragon
      end
    end
 
+   private
+
    def hungry?
      @stuff_in_belly <= 2
    end
@@ -96,7 +99,7 @@ class Dragon
 	  puts "He wakes up suddenly!"
 	end
      puts "#{@name} is starving! In desperation, he ate YOU!"
-     exit 
+        exit 
      end
  
      if @stuff_in_intestine >= 10
@@ -124,6 +127,6 @@ class Dragon
     end
 end
 
-pet = Dragon.new "Norbert"
+pet = Dragon.new "Viserys"
 pet.start 
 

@@ -8,13 +8,14 @@ def log(block_description, &block)
    $nesting_depth -= 1
    print $space * $nesting_depth + '... "'+ block_description + '" finished, returning: '
    puts $space * $nesting_depth + value_returned.to_s
-   end
+end
 
 log 'outer block' do
    log 'some little block' do
-       log 'teeny-tiny block' do
-           'lots of love'
-       end
+      log 'teeny-tiny block' do
+         'lots of love'
+      end
+
        42
    end
 

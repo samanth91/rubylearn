@@ -16,6 +16,6 @@ dong_proc = Proc.new do
   puts 'DONG!'
 end
 
-grand_father_clock dong_proc
+grand_father_clock(dong_proc)
 
  

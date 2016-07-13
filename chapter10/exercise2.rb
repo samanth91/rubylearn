@@ -12,6 +12,7 @@ log "outer block" do
    log "yet another block" do
       "I like Thai food!"
    end
+
    false
 end
 

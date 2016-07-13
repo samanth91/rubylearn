@@ -1,4 +1,4 @@
-def grand_father_clock(some_proc)
+def grand_father_clock(&block)
    current_hour = Time.new.hour
    
    if current_hour == 0
@@ -8,14 +8,13 @@ def grand_father_clock(some_proc)
    end
 
    current_hour.to_i.times do
-     some_proc.call
+     block.call
    end
 end
 
-dong_proc = Proc.new do
-  puts 'DONG!'
-end
 
-grand_father_clock(dong_proc)
+grand_father_clock do 
+  puts "DONG!"
+end
 
  

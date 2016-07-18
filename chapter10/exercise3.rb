@@ -16,7 +16,7 @@ log 'outer block' do
       'lots of love'
     end
 
-       42
+  42
   end
 
    log 'yet another block' do
